@@ -1,6 +1,7 @@
 import streamlit as st 
 import pandas as pd
 import numpy as np
+import datetime
 
 from time import sleep
 
@@ -12,26 +13,67 @@ st.set_page_config(
 )
 
 # 페이지 헤더, 서브헤더 제목 설정 
-st.header("Welcome to BIZBUZZ!📰")
-st.subheader("streamlit lets go")
+#st.header("Welcome to BIZBUZZ! 📰")
+#st.subheader("SNU Bigdata Fintech 7기 _ 조선비즈 캡스톤")
+
+# header 스타일 조정
+st.markdown("""
+    <style>
+    .big-font {
+        font-size:50px;  # 원하는 글자 크기로 조절
+        font-weight: bold;
+    }
+    </style>
+    <p class="big-font">Welcome to BIZBUZZ!</p>
+    """, unsafe_allow_html=True)
+
+# subheader 스타일 조정
+st.markdown("""
+    <style>
+    .small-font {
+        font-size:17px;  # 원하는 글자 크기로 조절
+        font-weight: normal;
+    }
+    </style>
+    <p class="small-font">SNU Bigdata Fintech 7기 _ 조선비즈 캡스톤</p>
+    """, unsafe_allow_html=True)
+
 
 # 페이지 컬럼 분할
-cols = st.columns((1, 1, 2))
-# cols[0].metric("10/11", "15 °C", "2") 
-# 첫 번째 숫자 ; 소제목 느낌으로 구현 
-# 두 번째 숫자 ; 소제목 안에 들어갈 내용 
-# 마지막 숫자 ; 양수기입시 녹색으로 위쪽 화살표 자동구현, 음수기입시 빨간색으로 아래쪽 화살표 자동구현
-cols[0].metric("10/11", "15 °C", "2")
-cols[0].metric("10/12", "17 °C", "2 °F")
-cols[0].metric("10/13", "15 °C", "2")
-cols[1].metric("10/14", "17 °C", "2 °F")
-cols[1].metric("10/15", "14 °C", "-3 °F")
-cols[1].metric("10/16", "13 °C", "-1 °F")
+cols = st.columns(3)
 
-# 라인 그래프 데이터 생성(with. Pandas)
-chart_data = pd.DataFrame(
-    np.random.randn(20, 3),
-    columns=['a', 'b', 'c'])
+# cols[0] : 오늘 날짜 표시
+today = datetime.date.today()
+# 오늘 날짜를 포맷팅 (예: 2023-12-06)
+formatted_date = today.strftime("%Y-%m-%d")
+cols[0].metric(label="📅 오늘 날짜", value=formatted_date)
 
-# 컬럼 나머지 부분에 라인차트 생성
-cols[2].line_chart(chart_data)
+# cols[1] : 디지털 시계 형식의 현재 시간 표시
+current_time = datetime.datetime.now()
+# 현재 시간을 디지털 시계 형식으로 포맷팅 (예: 15:30:45)
+formatted_time = current_time.strftime("%H:%M:%S")
+cols[1].metric(label="⏰ 현재 시간", value=formatted_time)
+
+# cols[2] : 오늘자 기사 개수 -- 실제 데이터 연동 필요
+num_articles = 5  # 오늘자 기사 개수
+cols[2].metric(label="🗞️ 오늘자 총 기사 개수", value=f"{num_articles}개")
+
+# 아래쪽에는 개인적으로 NER 탭 만들어서 넣는거도 좋을듯
+
+# "🍀 한국기업명 포함된 기사 LIST" 소제목, 기사 개수 표시 -- 실제 데이터 연동 필요
+st.markdown("""
+    <style>
+    .article-title {
+        font-size:18px;  # 소제목 글자 크기
+        font-weight: bold;
+        margin-bottom: 0.5em;  # 소제목 아래 마진 조절
+    }
+    .article-count {
+        font-size:15px;  # 기사 개수 글자 크기
+        margin-bottom: 1em;  # 기사 개수 아래 마진 조절
+    }
+    </style>
+    <h2 class="article-title">🍀 한국기업명 포함된 기사 LIST</h2>
+    <p class="article-count">기사 개수: 2개</p>
+    """, unsafe_allow_html=True)
+
