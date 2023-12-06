@@ -21,7 +21,7 @@ st.markdown("""
     <style>
     .big-font {
         font-size:50px;  # 원하는 글자 크기로 조절
-        font-weight: bold;
+        font-weight: 900;
     }
     </style>
     <p class="big-font">Welcome to BIZBUZZ!</p>
@@ -32,7 +32,7 @@ st.markdown("""
     <style>
     .small-font {
         font-size:17px;  # 원하는 글자 크기로 조절
-        font-weight: normal;
+        font-weight: bold;
     }
     </style>
     <p class="small-font">SNU Bigdata Fintech 7기 _ 조선비즈 캡스톤</p>
