@@ -16,16 +16,7 @@ st.set_page_config(
 #st.header("Welcome to BIZBUZZ! 📰")
 #st.subheader("SNU Bigdata Fintech 7기 _ 조선비즈 캡스톤")
 
-# header 스타일 조정
-st.markdown("""
-    <style>
-    .big-font {
-        font-size:50px;  # 원하는 글자 크기로 조절
-        font-weight: 900;
-    }
-    </style>
-    <p class="big-font">Welcome to BIZBUZZ!</p>
-    """, unsafe_allow_html=True)
+st.title('Welcome to BIZBUZZ!')
 
 # subheader 스타일 조정
 st.markdown("""
@@ -55,25 +46,24 @@ formatted_time = current_time.strftime("%H:%M:%S")
 cols[1].metric(label="⏰ 현재 시간", value=formatted_time)
 
 # cols[2] : 오늘자 기사 개수 -- 실제 데이터 연동 필요
-num_articles = 5  # 오늘자 기사 개수
+num_articles = 1255  # 오늘자 기사 개수
 cols[2].metric(label="🗞️ 오늘자 총 기사 개수", value=f"{num_articles}개")
 
-# 아래쪽에는 개인적으로 NER 탭 만들어서 넣는거도 좋을듯
+# 아래쪽에는 개인적으로 NER 탭 만들어서 넣는거 좋을듯
 
 # "🍀 한국기업명 포함된 기사 LIST" 소제목, 기사 개수 표시 -- 실제 데이터 연동 필요
 st.markdown("""
     <style>
     .article-title {
-        font-size:18px;  # 소제목 글자 크기
-        font-weight: bold;
+        font-size:15px;  # 소제목 글자 크기
+        font-weight: normal;
         margin-bottom: 0.5em;  # 소제목 아래 마진 조절
     }
     .article-count {
-        font-size:15px;  # 기사 개수 글자 크기
+        font-size:13px;  # 기사 개수 글자 크기
         margin-bottom: 1em;  # 기사 개수 아래 마진 조절
     }
     </style>
     <h2 class="article-title">🍀 한국기업명 포함된 기사 LIST</h2>
     <p class="article-count">기사 개수: 2개</p>
     """, unsafe_allow_html=True)
-
