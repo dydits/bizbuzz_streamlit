@@ -79,7 +79,7 @@ with col2:
     st.plotly_chart(fig2, use_container_width=True)
 
 if st.button("Run BIZBUZZ USA"):
-    with open('/Users/dydit/Desktop/Final_US_today_GovFin.py', 'r') as file:
+    with open('/Users/dydit/Desktop/Final_US.py', 'r') as file:
         exec(file.read())
 
 
@@ -98,7 +98,7 @@ if st.button("Final Articles (오늘자 총 기사 중 한국기업 언급된 �
 # 사이드바 제목 설정
 st.sidebar.title('USA Articles 📰')
 
-# select_multi_species 변수에 사용자가 선택한 값이 지정됩니다
+# select_multi_species
 select_multi_species = st.sidebar.multiselect(
     '확인하고 싶은 항목을 선택하세요. (복수선택가능)',
     ['Articles_GOV','Articles_LOCAL','Articles_EXTRA']
