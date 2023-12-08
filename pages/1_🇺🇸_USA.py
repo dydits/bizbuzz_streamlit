@@ -15,77 +15,70 @@ st.markdown("""
         font-size:13px;  # 원하는 글자 크기로 조절
     }
     </style>
-    <p class="small-font"> : CA - NJ - NY - TX - VA - MD - GA - WA - NC 9개의 주 선정 </p>
+    <p class="small-font"> 
+            : CA - NJ - NY - TX - VA - MD - GA - WA - NC 9개의 주 선정 </p>
     """, unsafe_allow_html=True)
 
-# USA detailed map 넣기 
+# 추가할 Markdown 텍스트
+st.markdown("""
+    <p class="small-font">
+        : USA Articles 종류 <br>
+        (1) Articles_GOV : 미국 주정부, 연방정부 <br>
+        (2) Articles_LOCAL : 위 9개 주 지역언론 <br>
+        (3) Aricles_EXTRA : 방산업체 & NASA
+    </p>
+    """, unsafe_allow_html=True)
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-# 데스크탑에 있는 엑셀 파일 경로
-excel_file_path = '/Users/dydit/Desktop/us_address_all.xlsx'  # 실제 사용자 이름으로 변경
-
-# 엑셀 파일 읽어오기 (컬럼 이름 없음)
-df = pd.read_excel(excel_file_path, header=None)
-
-# Scatter_geo를 사용하여 각 장소에 핀 찍기
-fig = px.scatter_geo(df,
-                     lat=df.iloc[:, 1].tolist(),  # 위도 정보는 두 번째 열에 위치
-                     lon=df.iloc[:, 2].tolist(),  # 경도 정보는 세 번째 열에 위치
-                     scope='usa',
-                     title='DETAILED USA MAP',
-                     )
-
-st.plotly_chart(fig, use_container_width=True)
-
-# Colored USA Map 넣기
-# 엑셀 파일의 로컬 경로로 수정하세요.
+# 엑셀 파일 경로
 excel_file_path = '/Users/dydit/Desktop/us_address_all.xlsx'
 
-# 엑셀 파일 읽어오기 (컬럼 이름 없음)
+# 엑셀 파일 읽어오기
 df = pd.read_excel(excel_file_path, header=None)
 
-# Scatter_geo를 사용하여 각 장소에 핀 찍기
-fig = px.scatter_geo(df,
-                     lat=df.iloc[:, 1].tolist(),
-                     lon=df.iloc[:, 2].tolist(),
-                     scope='usa',
-                     title='COLORED USA MAP')
+# 컬럼 두 개 생성
+col1, col2 = st.columns(2)
 
-# 주별 핀의 개수 계산
-pin_counts = df.iloc[:, 3].value_counts().reset_index()
-pin_counts.columns = ['State', 'Pin Count']
+# 첫 번째 컬럼
+with col1:
+    # Scatter_geo를 사용하여 첫 번째 그래프 생성
+    fig1 = px.scatter_geo(df,
+                         lat=df.iloc[:, 1].tolist(),
+                         lon=df.iloc[:, 2].tolist(),
+                         scope='usa',
+                         title='DETAILED USA MAP')
+    st.plotly_chart(fig1, use_container_width=True)
 
-# Choropleth map을 사용하여 미국 주에 대한 핀의 개수 표시 (붉은 계열 색상 맵 사용)
-choropleth_fig = px.choropleth(pin_counts,
-                               locations='State',
-                               locationmode='USA-states',
-                               color='Pin Count',
-                               scope='usa',
-                               title='Choropleth USA Map - Pin Counts',
-                               color_continuous_scale='YlOrRd')
+# 두 번째 컬럼
+with col2:
+    # Scatter_geo를 사용하여 두 번째 그래프 생성
+    fig2 = px.scatter_geo(df,
+                         lat=df.iloc[:, 1].tolist(),
+                         lon=df.iloc[:, 2].tolist(),
+                         scope='usa',
+                         title='COLORED USA MAP')
 
-# 두 그래프를 병합하기
-for trace in choropleth_fig.data:
-    fig.add_trace(trace)
+    # 주별 핀의 개수 계산하여 Choropleth map 생성
+    pin_counts = df.iloc[:, 3].value_counts().reset_index()
+    pin_counts.columns = ['State', 'Pin Count']
+    choropleth_fig = px.choropleth(pin_counts,
+                                   locations='State',
+                                   locationmode='USA-states',
+                                   color='Pin Count',
+                                   scope='usa',
+                                   title='Choropleth USA Map - Pin Counts',
+                                   color_continuous_scale='YlOrRd')
 
-# Streamlit에서 그래프 표시
-st.plotly_chart(fig, use_container_width=True)
+    # 두 번째 그래프에 Choropleth map 추가
+    for trace in choropleth_fig.data:
+        fig2.add_trace(trace)
 
-# 바 차트 생성
-bar_chart_fig = px.bar(pin_counts,
-                       x='State',
-                       y='Pin Count',
-                       title='Pin Counts by States',
-                       labels={'Pin Count': 'Count', 'State': 'State'},
-                       color_discrete_sequence=['#FF0000'])  # 빨간색 계열의 색상
+    st.plotly_chart(fig2, use_container_width=True)
 
-# Streamlit에서 바 차트 표시
-st.plotly_chart(bar_chart_fig, use_container_width=True)
-
-
-if st.button("run bizbuzz.py"):
+if st.button("Run BIZBUZZ USA"):
     with open('/Users/dydit/Desktop/Final_US_today_GovFin.py', 'r') as file:
         exec(file.read())
 
@@ -96,15 +89,31 @@ import streamlit as st
 import pandas as pd
 today_str = datetime.now().strftime("%m%d") 
 
-# 버튼과 데이터프레임을 표시하는 코드
-if st.button("Articles 파일 보기"):
-    df_articles = pd.read_csv(f'articles_{today_str}.csv')
-    st.dataframe(df_articles)
 
-if st.button("Error List 파일 보기"):
-    df_errors = pd.read_csv(f'error_list_{today_str}.csv')
-    st.dataframe(df_errors)
-
-if st.button("Final Articles 파일 보기"):
+if st.button("Final Articles (오늘자 총 기사 중 한국기업 언급된 기사)"):
     df_final_articles = pd.read_csv(f'Final Articles_{today_str}.csv')
     st.dataframe(df_final_articles)
+
+
+# 사이드바 제목 설정
+st.sidebar.title('USA Articles 📰')
+
+# select_multi_species 변수에 사용자가 선택한 값이 지정됩니다
+select_multi_species = st.sidebar.multiselect(
+    '확인하고 싶은 항목을 선택하세요. (복수선택가능)',
+    ['Articles_GOV','Articles_LOCAL','Articles_EXTRA']
+)
+
+# 선택된 각 항목에 대한 데이터프레임 표시
+for article_type in select_multi_species:
+    if article_type == 'Articles_GOV':
+        df_final_articles = pd.read_csv(f'Articles_GOV_{today_str}.csv')
+        st.dataframe(df_final_articles)
+
+    elif article_type == 'Articles_LOCAL':
+        df_final_articles = pd.read_csv(f'Articles_LOCAL_{today_str}.csv')
+        st.dataframe(df_final_articles)
+
+    elif article_type == 'Articles_EXTRA':
+        df_final_articles = pd.read_csv(f'Articles_EXTRA_{today_str}.csv')
+        st.dataframe(df_final_articles)
