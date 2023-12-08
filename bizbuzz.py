@@ -12,7 +12,7 @@ st.set_page_config(
     layout = "wide",
 )
 
-# 페이지 헤더, 서브헤더 제목 설정 
+# 페이지헤더, 서브헤더
 #st.header("Welcome to BIZBUZZ! 📰")
 #st.subheader("SNU Bigdata Fintech 7기 _ 조선비즈 캡스톤")
 
