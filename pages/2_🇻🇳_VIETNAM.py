@@ -19,10 +19,10 @@ st.markdown("""
     </style>
     <p class="small-font">
         : VIETNAM Articles 종류 <br>
-        (1) V_Articles_GOV : 베트남 정부 <br>
-        (2) V_Articles_LOCAL : 베트남 지역언론 <br>
-        (3) V_Articles_GOV_TRANS : <br>
-        (4) V_Articles_LOCAL_TRANS : 
+        (1) V_Articles_GOV : 베트남 중앙 & 지방 정부부처   <br>
+        (2) V_Articles_LOCAL : 베트남 주요 언론매체 <br>
+        (3) V_Articles_GOV_TRANS : 베트남 중앙 & 지방 정부부처 <br>
+        (4) V_Articles_LOCAL_TRANS : 베트남 주요 언론매체
     </p>
     """, unsafe_allow_html=True)
 
