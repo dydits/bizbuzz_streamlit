@@ -79,7 +79,7 @@ with col2:
     st.plotly_chart(fig2, use_container_width=True)
 
 if st.button("Run BIZBUZZ USA"):
-    with open('/Users/dydit/Desktop/Final_US.py', 'r') as file:
+    with open('/Users/dydit/Desktop/Real_Final_US.py', 'r') as file:
         exec(file.read())
 
 
