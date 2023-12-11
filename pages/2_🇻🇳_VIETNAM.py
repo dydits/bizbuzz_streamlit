@@ -26,22 +26,28 @@ st.markdown("""
     </p>
     """, unsafe_allow_html=True)
 
-# 오늘 날짜를 '월일' 형식으로 가져오기
+
+# 스트림릿 버튼을 추가하고 클릭 시 세 파일을 순차적으로 실행
+if st.button("Run BIZBUZZ VIETNAM"):
+    # 각 파일의 경로를 지정하고 순차적으로 실행
+    for file_name in ['US_All_Govern.py', 'US_All_DefenseIndustry.py', 'US_All_Local.py']:
+        with open(file_name, 'r') as file:
+            exec(file.read())
+
+
 from datetime import datetime
 import streamlit as st
 import pandas as pd
-today_str = datetime.now().strftime("%m%d") 
 
-if st.button("Run BIZBUZZ VIETNAM"):
-    with open('/Users/dydit/Desktop/Final_US_today_GovFin.py', 'r') as file:
-        exec(file.read())
+today_str = datetime.now().strftime("%y%m%d")  # 예: '231211'
+
 
 if st.button("Final Articles (오늘자 총 기사 중 한국기업 언급된 기사)"):
-    df_final_articles = pd.read_csv(f'Final Articles_{today_str}.csv')
+    df_final_articles = pd.read_csv(f'V_Final Articles_{today_str}.csv')
     st.dataframe(df_final_articles)
 
+# 사이드바 제목 설정
 st.sidebar.title('VIETNAM Articles 📰')
-
 
 # select_multi_species
 select_multi_species = st.sidebar.multiselect(

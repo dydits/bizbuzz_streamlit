@@ -78,9 +78,33 @@ with col2:
 
     st.plotly_chart(fig2, use_container_width=True)
 
+##################################################### Above, extra work ###################################################
+
+# 스트림릿 버튼을 추가하고 클릭 시 세 파일을 순차적으로 실행
 if st.button("Run BIZBUZZ USA"):
-    with open('/Users/dydit/Desktop/Real_Final_US.py', 'r') as file:
-        exec(file.read())
+    # 각 파일의 경로를 지정하고 순차적으로 실행
+    for file_name in ['US_All_Govern.py', 'US_All_DefenseIndustry.py', 'US_All_Local.py']:
+        with open(file_name, 'r') as file:
+            exec(file.read())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 from datetime import datetime
