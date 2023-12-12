@@ -78,9 +78,20 @@ with col2:
 
     st.plotly_chart(fig2, use_container_width=True)
 
-if st.button("Run BIZBUZZ USA"):
-    with open('/Users/dydit/Desktop/Real_Final_US.py', 'r') as file:
-        exec(file.read())
+##################################################### Above, extra work ###################################################
+
+
+import subprocess
+# 버튼 추가
+if st.button('Run BIZBUZZ USA'):
+    # 실행하고자 하는 Python 파일의 경로
+    file_path = '/Users/dydit/Desktop/Real_Final_US.py'
+
+    # subprocess를 사용하여 Python 파일 실행
+    result = subprocess.run(['python', file_path], stdout=subprocess.PIPE)
+
+    # 실행 결과 출력
+    st.text(result.stdout.decode())
 
 
 from datetime import datetime
@@ -100,7 +111,7 @@ st.sidebar.title('USA Articles 📰')
 # select_multi_species
 select_multi_species = st.sidebar.multiselect(
     '확인하고 싶은 항목을 선택하세요. (복수선택가능)',
-    ['Articles_GOV', 'Articles_LOCAL', 'Articles_EXTRA']
+    ['Articles_GOV', 'Articles_LOCAL', 'Articles_EXTRA', 'All Articles']
 )
 
 # 선택된 각 항목에 대한 데이터프레임 표시
@@ -118,4 +129,8 @@ for article_type in select_multi_species:
     elif article_type == 'Articles_EXTRA':
         # 파일명을 'US_Defense Industry Articles_오늘날짜.csv'로 변경
         df_articles = pd.read_csv(f'US_Defense Industry Articles_{today_str}.csv')
+        st.dataframe(df_articles)
+
+    elif article_type == 'All Articles':
+        df_articles = pd.read_csv(f'US_All Articles_{today_str}.csv')
         st.dataframe(df_articles)
