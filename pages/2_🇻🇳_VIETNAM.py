@@ -27,6 +27,39 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+
+# 엑셀 파일 경로
+excel_file_path = '/Users/dydit/Desktop/sampled_vietnam_trade_offices.xlsx'
+
+# 엑셀 파일 읽어오기
+df = pd.read_excel(excel_file_path)
+
+# 컬럼 두 개 생성
+col1, col2 = st.columns(2)
+
+# 첫 번째 컬럼
+with col1:
+    # Scatter_geo를 사용하여 첫 번째 그래프 생성
+    # 베트남만 따로 보여주는 Scatter_geo 그래프 생성
+    fig1 = px.scatter_geo(df, lat='위도', lon='경도', hover_name='기업명(국문)', 
+                     scope='asia', 
+                     center={'lat': 14.0583, 'lon': 108.2772}, # 베트남 중심 좌표
+                     title='Detailed VIETNAM Map')
+
+    # 지도의 범위를 베트남에만 제한
+    fig1.update_geos(
+    visible=False, showcountries=True, countrycolor="Black",
+    showsubunits=True, subunitcolor="Blue"
+    )   
+    fig1.update_geos(
+    lataxis_range=[8, 23], # 베트남의 위도 범위
+    lonaxis_range=[102, 110] # 베트남의 경도 범위
+)
+    st.plotly_chart(fig1, use_container_width=True)
+
 # 스트림릿 버튼을 추가하고 클릭 시 세 파일을 순차적으로 실행
 if st.button("Run BIZBUZZ VIETNAM"):
     # 각 파일의 경로를 지정하고 순차적으로 실행

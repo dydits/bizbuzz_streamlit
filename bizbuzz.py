@@ -46,7 +46,13 @@ formatted_time = current_time.strftime("%H:%M:%S")
 cols[1].metric(label="⏰ 현재 시간", value=formatted_time)
 
 # cols[2] : 오늘자 기사 개수 -- 실제 데이터 연동 필요
-num_articles = 1255  # 오늘자 기사 개수
+import pandas as pd
+from datetime import datetime
+today_str = datetime.now().strftime("%y%m%d")  # 예: '231211'
+US = pd.read_csv(f'US_All Articles_{today_str}.csv')
+VIETNAM_1 = pd.read_csv(f'V_Articles_GOV_{today_str}.csv')
+VIETNAM_2 = pd.read_csv(f'V_Articles_LOCAL_{today_str}.csv')
+num_articles = len(US) + len(VIETNAM_1) + len(VIETNAM_2)
 cols[2].metric(label="🗞️ 오늘자 총 기사 개수", value=f"{num_articles}개")
 
 # 아래쪽에는 개인적으로 NER 탭 만들어서 넣는거 좋을듯
@@ -65,5 +71,5 @@ st.markdown("""
     }
     </style>
     <h2 class="article-title">🍀 한국기업명 포함된 기사 LIST</h2>
-    <p class="article-count">기사 개수: 2개</p>
+    
     """, unsafe_allow_html=True)

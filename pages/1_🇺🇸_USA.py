@@ -79,19 +79,24 @@ with col2:
     st.plotly_chart(fig2, use_container_width=True)
 
 ##################################################### Above, extra work ###################################################
-
-
 import subprocess
-# 버튼 추가
+# 세 파일을 순차적으로 실행하는 함수
+def run_python_files():
+    file_paths = [
+        '/Users/dydit/Desktop/US_All_Govern.py',
+        '/Users/dydit/Desktop/US_All_DefenseIndustry.py',
+        '/Users/dydit/Desktop/US_All_Local.py',
+        '/Users/dydit/Desktop/US_Select.py'
+    ]
+
+    for file_path in file_paths:
+        result = subprocess.run(['python', file_path], stdout=subprocess.PIPE)
+        st.text(f"{file_path} 실행 결과:")
+        st.text(result.stdout.decode())
+
+# 스트림릿 버튼 추가
 if st.button('Run BIZBUZZ USA'):
-    # 실행하고자 하는 Python 파일의 경로
-    file_path = '/Users/dydit/Desktop/Real_Final_US.py'
-
-    # subprocess를 사용하여 Python 파일 실행
-    result = subprocess.run(['python', file_path], stdout=subprocess.PIPE)
-
-    # 실행 결과 출력
-    st.text(result.stdout.decode())
+    run_python_files()
 
 
 from datetime import datetime
