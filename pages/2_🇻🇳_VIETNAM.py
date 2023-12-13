@@ -89,7 +89,7 @@ with col2:
 
 
 import subprocess
-# 세 파일을 순차적으로 실행하는 함수
+# 함수
 def run_python_files():
     file_paths = [
         '/Users/dydit/Desktop/vietnam_today_final.py'

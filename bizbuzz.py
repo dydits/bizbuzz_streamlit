@@ -52,7 +52,9 @@ today_str = datetime.now().strftime("%y%m%d")  # 예: '231211'
 US = pd.read_csv(f'US_All Articles_{today_str}.csv')
 VIETNAM_1 = pd.read_csv(f'V_Articles_GOV_{today_str}.csv')
 VIETNAM_2 = pd.read_csv(f'V_Articles_LOCAL_{today_str}.csv')
-num_articles = len(US) + len(VIETNAM_1) + len(VIETNAM_2)
+INDONESIA_1 = pd.read_csv(f'IN_Articles_GOV_{today_str}.csv')
+INDONESIA_2 = pd.read_csv(f'IN_Articles_LOCAL_{today_str}.csv')
+num_articles = len(US) + len(VIETNAM_1) + len(VIETNAM_2) + len(INDONESIA_1) + len(INDONESIA_2)
 cols[2].metric(label="🗞️ 오늘자 총 기사 개수", value=f"{num_articles}개")
 
 # 아래쪽에는 개인적으로 NER 탭 만들어서 넣는거 좋을듯
@@ -73,3 +75,4 @@ st.markdown("""
     <h2 class="article-title">🍀 한국기업명 포함된 기사 LIST</h2>
     
     """, unsafe_allow_html=True)
+

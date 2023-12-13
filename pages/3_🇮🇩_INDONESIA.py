@@ -31,7 +31,7 @@ import subprocess
 # 함수
 def run_python_files():
     file_paths = [
-        '/Users/dydit/Desktop/vietnam_today_final.py'
+        '/Users/dydit/Desktop/indonesia_today_final.py'
     ]
 
     for file_path in file_paths:
@@ -51,7 +51,7 @@ import pandas as pd
 today_str = datetime.now().strftime("%y%m%d")  # 예: '231211'
 
 if st.button("Final Articles (오늘자 총 기사 중 한국기업 언급된 기사)"):
-    df_final_articles = pd.read_csv(f'V_Final Articles_{today_str}.csv')
+    df_final_articles = pd.read_csv(f'IN_Final Articles_{today_str}.csv')
     st.dataframe(df_final_articles)
 
 # 사이드바 제목 설정
