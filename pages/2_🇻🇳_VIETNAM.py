@@ -21,8 +21,8 @@ st.markdown("""
         : VIETNAM Articles 종류 <br>
         (1) V_Articles_GOV : 베트남 중앙 & 지방 정부부처   <br>
         (2) V_Articles_LOCAL : 베트남 주요 언론매체 <br>
-        (3) V_Articles_GOV_TRANS : 베트남 중앙 & 지방 정부부처 <br>
-        (4) V_Articles_LOCAL_TRANS : 베트남 주요 언론매체
+        (3) V_Articles_GOV_TRANS : 베트남 중앙 & 지방 정부부처 (한국기업명 추출 & 번역 포함) <br>
+        (4) V_Articles_LOCAL_TRANS : 베트남 주요 언론매체 (한국기업명 추출 & 번역 포함)
     </p>
     """, unsafe_allow_html=True)
 
@@ -60,12 +60,49 @@ with col1:
 )
     st.plotly_chart(fig1, use_container_width=True)
 
-# 스트림릿 버튼을 추가하고 클릭 시 세 파일을 순차적으로 실행
-if st.button("Run BIZBUZZ VIETNAM"):
-    # 각 파일의 경로를 지정하고 순차적으로 실행
-    for file_name in ['US_All_Govern.py', 'US_All_DefenseIndustry.py', 'US_All_Local.py']:
-        with open(file_name, 'r') as file:
-            exec(file.read())
+with col2: 
+    df_count = df.groupby(['위도', '경도']).size().reset_index(name='counts')
+
+    fig = px.scatter_geo(df_count, lat='위도', lon='경도', size='counts',
+                     hover_name='counts', scope='asia',
+                     center={'lat': 14.0583, 'lon': 108.2772}, # 베트남 중심 좌표
+                     title='Colored VIETNAM Map', color='counts',
+                     color_continuous_scale=px.colors.sequential.Viridis)
+    
+    # 지도의 범위를 베트남에만 제한
+    fig.update_geos(
+        visible=False, showcountries=True, countrycolor="Black",
+        showsubunits=True, subunitcolor="Blue"
+        )
+    fig.update_geos(
+        lataxis_range=[8, 23], # 베트남의 위도 범위
+        lonaxis_range=[102, 110] # 베트남의 경도 범위
+        )
+    
+    fig.update_layout(coloraxis_colorbar=dict(
+    title="Number of Offices",
+    tickvals=df_count['counts'],
+    ticktext=df_count['counts']
+    ))
+
+    st.plotly_chart(fig)
+
+
+import subprocess
+# 세 파일을 순차적으로 실행하는 함수
+def run_python_files():
+    file_paths = [
+        '/Users/dydit/Desktop/vietnam_today_final.py'
+    ]
+
+    for file_path in file_paths:
+        result = subprocess.run(['python', file_path], stdout=subprocess.PIPE)
+        st.text(f"{file_path} 실행 결과:")
+        st.text(result.stdout.decode())
+
+# 스트림릿 버튼 추가
+if st.button('Run BIZBUZZ VIETNAM'):
+    run_python_files()
 
 
 from datetime import datetime
@@ -73,7 +110,6 @@ import streamlit as st
 import pandas as pd
 
 today_str = datetime.now().strftime("%y%m%d")  # 예: '231211'
-
 
 if st.button("Final Articles (오늘자 총 기사 중 한국기업 언급된 기사)"):
     df_final_articles = pd.read_csv(f'V_Final Articles_{today_str}.csv')
