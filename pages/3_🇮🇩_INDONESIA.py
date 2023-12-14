@@ -26,6 +26,65 @@ st.markdown("""
     </p>
     """, unsafe_allow_html=True)
 
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+
+# 엑셀 파일 경로
+excel_file_path = '/Users/dydit/Desktop/sampled_Indonesia_trade_offices.xlsx'
+
+# 엑셀 파일 읽어오기
+df = pd.read_excel(excel_file_path)
+
+# 컬럼 두 개 생성
+col1, col2 = st.columns(2)
+
+# 첫 번째 컬럼
+with col1:
+    # 인도네시아 지도를 보여주는 Scatter_geo 그래프 생성
+    indonesia_fig = px.scatter_geo(df, lat='위도', lon='경도', hover_name='기업명(국문)',
+                                   scope='asia',
+                                   center={'lat': -0.7893, 'lon': 113.9213}, # 인도네시아 중심 좌표
+                                   title='Detailed INDONESIA Map')
+
+    # 지도의 범위를 인도네시아에만 제한
+    indonesia_fig.update_geos(
+        visible=False, showcountries=True, countrycolor="Black",
+        showsubunits=True, subunitcolor="Blue"
+    )
+    indonesia_fig.update_geos(
+        lataxis_range=[-11, 6], # 인도네시아의 위도 범위
+        lonaxis_range=[95, 141] # 인도네시아의 경도 범위
+    )
+
+
+
+    # 스트림릿에 그래프 표시
+    st.plotly_chart(indonesia_fig)
+
+# 두 번째 컬럼
+with col2:
+    # 각 위치에 있는 핀의 개수 계산
+    location_counts = df.groupby(['위도', '경도']).size().reset_index(name='counts')
+
+    # 인도네시아 지도를 보여주는 Scatter_geo 그래프 생성
+    indonesia_fig = px.scatter_geo(location_counts, lat='위도', lon='경도', size='counts', hover_name='counts',
+                                   scope='asia',
+                                   center={'lat': -0.7893, 'lon': 113.9213}, # 인도네시아 중심 좌표
+                                   title='Colored INDONESIA Map')
+
+    # 지도의 범위를 인도네시아에만 제한
+    indonesia_fig.update_geos(
+        visible=False, showcountries=True, countrycolor="Black",
+        showsubunits=True, subunitcolor="Blue"
+    )
+    indonesia_fig.update_geos(
+        lataxis_range=[-11, 6], # 인도네시아의 위도 범위
+        lonaxis_range=[95, 141] # 인도네시아의 경도 범위
+    )
+
+    # 스트림릿에 그래프 표시
+    st.plotly_chart(indonesia_fig)
 
 import subprocess
 # 함수

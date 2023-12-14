@@ -1,0 +1,29 @@
+,Error Link,Error
+0,http://www.mofa.gov.vn/,"Message: timeout: Timed out receiving message from renderer: -0.020
+  (Session info: chrome-headless-shell=120.0.6099.71)
+Stacktrace:
+0   chromedriver                        0x0000000100a944cc chromedriver + 4162764
+1   chromedriver                        0x0000000100a8c654 chromedriver + 4130388
+2   chromedriver                        0x00000001006e3bc0 chromedriver + 293824
+3   chromedriver                        0x00000001006cbc3c chromedriver + 195644
+4   chromedriver                        0x00000001006cbad0 chromedriver + 195280
+5   chromedriver                        0x00000001006c9e3c chromedriver + 187964
+6   chromedriver                        0x00000001006cab30 chromedriver + 191280
+7   chromedriver                        0x00000001006d9f5c chromedriver + 253788
+8   chromedriver                        0x00000001006ef4b4 chromedriver + 341172
+9   chromedriver                        0x00000001006cb1e0 chromedriver + 192992
+10  chromedriver                        0x00000001006ef2d0 chromedriver + 340688
+11  chromedriver                        0x0000000100769a24 chromedriver + 842276
+12  chromedriver                        0x000000010071d6bc chromedriver + 530108
+13  chromedriver                        0x000000010071e930 chromedriver + 534832
+14  chromedriver                        0x0000000100a59df8 chromedriver + 3923448
+15  chromedriver                        0x0000000100a5e3cc chromedriver + 3941324
+16  chromedriver                        0x0000000100a42028 chromedriver + 3825704
+17  chromedriver                        0x0000000100a5ef2c chromedriver + 3944236
+18  chromedriver                        0x0000000100a346e4 chromedriver + 3770084
+19  chromedriver                        0x0000000100a7b970 chromedriver + 4061552
+20  chromedriver                        0x0000000100a7bae8 chromedriver + 4061928
+21  chromedriver                        0x0000000100a8c2d4 chromedriver + 4129492
+22  libsystem_pthread.dylib             0x0000000193b6206c _pthread_start + 148
+23  libsystem_pthread.dylib             0x0000000193b5ce2c thread_start + 8
+"
