@@ -57,22 +57,38 @@ INDONESIA_2 = pd.read_csv(f'IN_Articles_LOCAL_{today_str}.csv')
 num_articles = len(US) + len(VIETNAM_1) + len(VIETNAM_2) + len(INDONESIA_1) + len(INDONESIA_2)
 cols[2].metric(label="🗞️ 오늘자 총 기사 개수", value=f"{num_articles}개")
 
-# 아래쪽에는 개인적으로 NER 탭 만들어서 넣는거 좋을듯
 
-# "🍀 한국기업명 포함된 기사 LIST" 소제목, 기사 개수 표시 -- 실제 데이터 연동 필요
-st.markdown("""
-    <style>
-    .article-title {
-        font-size:15px;  # 소제목 글자 크기
-        font-weight: normal;
-        margin-bottom: 0.5em;  # 소제목 아래 마진 조절
-    }
-    .article-count {
-        font-size:13px;  # 기사 개수 글자 크기
-        margin-bottom: 1em;  # 기사 개수 아래 마진 조절
-    }
-    </style>
-    <h2 class="article-title">🍀 한국기업명 포함된 기사 LIST</h2>
-    
-    """, unsafe_allow_html=True)
+from datetime import datetime
+import streamlit as st
+import pandas as pd
 
+def load_data(file_name):
+    try:
+        return pd.read_csv(file_name)
+    except FileNotFoundError:
+        st.error(f"File '{file_name}' not found.")
+        return None
+
+def display_file_with_header(file_name, header):
+    st.markdown(f"#### {header}")
+    data = load_data(file_name)
+    if data is not None:
+        st.write(data)
+
+def main():
+    today_str = datetime.now().strftime("%y%m%d")  # 예: '231211'
+
+    # 미국 데이터 파일 불러오기
+    us_file = f"US_Final Selected Articles_{today_str}.csv"
+    display_file_with_header(us_file, "US_Final_Selected")
+
+    # 베트남 데이터 파일 불러오기
+    v_file = f"V_Final Articles_{today_str}.csv"
+    display_file_with_header(v_file, "V_Final_Selected")
+
+    # 인도 데이터 파일 불러오기
+    in_file = f"IN_Final Articles_{today_str}.csv"
+    display_file_with_header(in_file, "IN_Final_Selected")
+
+if __name__ == "__main__":
+    main()
