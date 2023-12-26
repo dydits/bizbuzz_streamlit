@@ -1,0 +1,319 @@
+,Error Link,Error
+0,https://xaydung.gov.vn/vn/chuyen-muc/1259/quy-hoach-kien-truc.aspx,"Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+  (Session info: chrome-headless-shell=120.0.6099.129)
+Stacktrace:
+0   chromedriver                        0x0000000102c844dc chromedriver + 4162780
+1   chromedriver                        0x0000000102c7c664 chromedriver + 4130404
+2   chromedriver                        0x00000001028d3bc0 chromedriver + 293824
+3   chromedriver                        0x00000001028cc324 chromedriver + 262948
+4   chromedriver                        0x00000001028bdc7c chromedriver + 203900
+5   chromedriver                        0x00000001028bca98 chromedriver + 199320
+6   chromedriver                        0x00000001028bbb24 chromedriver + 195364
+7   chromedriver                        0x00000001028bbad0 chromedriver + 195280
+8   chromedriver                        0x00000001028b9e3c chromedriver + 187964
+9   chromedriver                        0x00000001028ba9fc chromedriver + 190972
+10  chromedriver                        0x00000001028d65d8 chromedriver + 304600
+11  chromedriver                        0x000000010295a0b8 chromedriver + 843960
+12  chromedriver                        0x0000000102959ab0 chromedriver + 842416
+13  chromedriver                        0x000000010290d6bc chromedriver + 530108
+14  chromedriver                        0x000000010290e930 chromedriver + 534832
+15  chromedriver                        0x0000000102c49e08 chromedriver + 3923464
+16  chromedriver                        0x0000000102c4e3dc chromedriver + 3941340
+17  chromedriver                        0x0000000102c32038 chromedriver + 3825720
+18  chromedriver                        0x0000000102c4ef3c chromedriver + 3944252
+19  chromedriver                        0x0000000102c246f4 chromedriver + 3770100
+20  chromedriver                        0x0000000102c6b980 chromedriver + 4061568
+21  chromedriver                        0x0000000102c6baf8 chromedriver + 4061944
+22  chromedriver                        0x0000000102c7c2e4 chromedriver + 4129508
+23  libsystem_pthread.dylib             0x0000000193b6206c _pthread_start + 148
+24  libsystem_pthread.dylib             0x0000000193b5ce2c thread_start + 8
+"
+1,https://monre.gov.vn/Pages/ChuyenMuc.aspx?cm=%C4%90%E1%BA%A5t%20%C4%91ai,"Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome-headless-shell=120.0.6099.129)
+Stacktrace:
+0   chromedriver                        0x0000000102acc4dc chromedriver + 4162780
+1   chromedriver                        0x0000000102ac4664 chromedriver + 4130404
+2   chromedriver                        0x000000010271bbc0 chromedriver + 293824
+3   chromedriver                        0x0000000102714324 chromedriver + 262948
+4   chromedriver                        0x0000000102705c7c chromedriver + 203900
+5   chromedriver                        0x0000000102704a98 chromedriver + 199320
+6   chromedriver                        0x0000000102703b24 chromedriver + 195364
+7   chromedriver                        0x0000000102703ad0 chromedriver + 195280
+8   chromedriver                        0x0000000102701e3c chromedriver + 187964
+9   chromedriver                        0x00000001027029fc chromedriver + 190972
+10  chromedriver                        0x000000010271e5d8 chromedriver + 304600
+11  chromedriver                        0x00000001027a20b8 chromedriver + 843960
+12  chromedriver                        0x00000001027a1ab0 chromedriver + 842416
+13  chromedriver                        0x00000001027556bc chromedriver + 530108
+14  chromedriver                        0x0000000102756930 chromedriver + 534832
+15  chromedriver                        0x0000000102a91e08 chromedriver + 3923464
+16  chromedriver                        0x0000000102a963dc chromedriver + 3941340
+17  chromedriver                        0x0000000102a7a038 chromedriver + 3825720
+18  chromedriver                        0x0000000102a96f3c chromedriver + 3944252
+19  chromedriver                        0x0000000102a6c6f4 chromedriver + 3770100
+20  chromedriver                        0x0000000102ab3980 chromedriver + 4061568
+21  chromedriver                        0x0000000102ab3af8 chromedriver + 4061944
+22  chromedriver                        0x0000000102ac42e4 chromedriver + 4129508
+23  libsystem_pthread.dylib             0x0000000193b6206c _pthread_start + 148
+24  libsystem_pthread.dylib             0x0000000193b5ce2c thread_start + 8
+"
+2,https://monre.gov.vn/Pages/ChuyenMuc.aspx?cm=T%C3%A0i%20nguy%C3%AAn%20n%C6%B0%E1%BB%9Bc,"Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome-headless-shell=120.0.6099.129)
+Stacktrace:
+0   chromedriver                        0x0000000102acc4dc chromedriver + 4162780
+1   chromedriver                        0x0000000102ac4664 chromedriver + 4130404
+2   chromedriver                        0x000000010271bbc0 chromedriver + 293824
+3   chromedriver                        0x0000000102714324 chromedriver + 262948
+4   chromedriver                        0x0000000102705c7c chromedriver + 203900
+5   chromedriver                        0x0000000102704a98 chromedriver + 199320
+6   chromedriver                        0x0000000102703b24 chromedriver + 195364
+7   chromedriver                        0x0000000102703ad0 chromedriver + 195280
+8   chromedriver                        0x0000000102701e3c chromedriver + 187964
+9   chromedriver                        0x00000001027029fc chromedriver + 190972
+10  chromedriver                        0x000000010271e5d8 chromedriver + 304600
+11  chromedriver                        0x00000001027a20b8 chromedriver + 843960
+12  chromedriver                        0x00000001027a1ab0 chromedriver + 842416
+13  chromedriver                        0x00000001027556bc chromedriver + 530108
+14  chromedriver                        0x0000000102756930 chromedriver + 534832
+15  chromedriver                        0x0000000102a91e08 chromedriver + 3923464
+16  chromedriver                        0x0000000102a963dc chromedriver + 3941340
+17  chromedriver                        0x0000000102a7a038 chromedriver + 3825720
+18  chromedriver                        0x0000000102a96f3c chromedriver + 3944252
+19  chromedriver                        0x0000000102a6c6f4 chromedriver + 3770100
+20  chromedriver                        0x0000000102ab3980 chromedriver + 4061568
+21  chromedriver                        0x0000000102ab3af8 chromedriver + 4061944
+22  chromedriver                        0x0000000102ac42e4 chromedriver + 4129508
+23  libsystem_pthread.dylib             0x0000000193b6206c _pthread_start + 148
+24  libsystem_pthread.dylib             0x0000000193b5ce2c thread_start + 8
+"
+3,https://monre.gov.vn/Pages/ChuyenMuc.aspx?cm=%C4%90%E1%BB%8Ba%20ch%E1%BA%A5t%20v%C3%A0%20kho%C3%A1ng%20s%E1%BA%A3n,"Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome-headless-shell=120.0.6099.129)
+Stacktrace:
+0   chromedriver                        0x0000000102acc4dc chromedriver + 4162780
+1   chromedriver                        0x0000000102ac4664 chromedriver + 4130404
+2   chromedriver                        0x000000010271bbc0 chromedriver + 293824
+3   chromedriver                        0x0000000102714324 chromedriver + 262948
+4   chromedriver                        0x0000000102705c7c chromedriver + 203900
+5   chromedriver                        0x0000000102704a98 chromedriver + 199320
+6   chromedriver                        0x0000000102703b24 chromedriver + 195364
+7   chromedriver                        0x0000000102703ad0 chromedriver + 195280
+8   chromedriver                        0x0000000102701e3c chromedriver + 187964
+9   chromedriver                        0x00000001027029fc chromedriver + 190972
+10  chromedriver                        0x000000010271e5d8 chromedriver + 304600
+11  chromedriver                        0x00000001027a20b8 chromedriver + 843960
+12  chromedriver                        0x00000001027a1ab0 chromedriver + 842416
+13  chromedriver                        0x00000001027556bc chromedriver + 530108
+14  chromedriver                        0x0000000102756930 chromedriver + 534832
+15  chromedriver                        0x0000000102a91e08 chromedriver + 3923464
+16  chromedriver                        0x0000000102a963dc chromedriver + 3941340
+17  chromedriver                        0x0000000102a7a038 chromedriver + 3825720
+18  chromedriver                        0x0000000102a96f3c chromedriver + 3944252
+19  chromedriver                        0x0000000102a6c6f4 chromedriver + 3770100
+20  chromedriver                        0x0000000102ab3980 chromedriver + 4061568
+21  chromedriver                        0x0000000102ab3af8 chromedriver + 4061944
+22  chromedriver                        0x0000000102ac42e4 chromedriver + 4129508
+23  libsystem_pthread.dylib             0x0000000193b6206c _pthread_start + 148
+24  libsystem_pthread.dylib             0x0000000193b5ce2c thread_start + 8
+"
+4,https://monre.gov.vn/Pages/ChuyenMuc.aspx?cm=M%C3%B4i%20tr%C6%B0%E1%BB%9Dng,"Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome-headless-shell=120.0.6099.129)
+Stacktrace:
+0   chromedriver                        0x0000000102acc4dc chromedriver + 4162780
+1   chromedriver                        0x0000000102ac4664 chromedriver + 4130404
+2   chromedriver                        0x000000010271bbc0 chromedriver + 293824
+3   chromedriver                        0x0000000102714324 chromedriver + 262948
+4   chromedriver                        0x0000000102705c7c chromedriver + 203900
+5   chromedriver                        0x0000000102704a98 chromedriver + 199320
+6   chromedriver                        0x0000000102703b24 chromedriver + 195364
+7   chromedriver                        0x0000000102703ad0 chromedriver + 195280
+8   chromedriver                        0x0000000102701e3c chromedriver + 187964
+9   chromedriver                        0x00000001027029fc chromedriver + 190972
+10  chromedriver                        0x000000010271e5d8 chromedriver + 304600
+11  chromedriver                        0x00000001027a20b8 chromedriver + 843960
+12  chromedriver                        0x00000001027a1ab0 chromedriver + 842416
+13  chromedriver                        0x00000001027556bc chromedriver + 530108
+14  chromedriver                        0x0000000102756930 chromedriver + 534832
+15  chromedriver                        0x0000000102a91e08 chromedriver + 3923464
+16  chromedriver                        0x0000000102a963dc chromedriver + 3941340
+17  chromedriver                        0x0000000102a7a038 chromedriver + 3825720
+18  chromedriver                        0x0000000102a96f3c chromedriver + 3944252
+19  chromedriver                        0x0000000102a6c6f4 chromedriver + 3770100
+20  chromedriver                        0x0000000102ab3980 chromedriver + 4061568
+21  chromedriver                        0x0000000102ab3af8 chromedriver + 4061944
+22  chromedriver                        0x0000000102ac42e4 chromedriver + 4129508
+23  libsystem_pthread.dylib             0x0000000193b6206c _pthread_start + 148
+24  libsystem_pthread.dylib             0x0000000193b5ce2c thread_start + 8
+"
+5,https://monre.gov.vn/Pages/ChuyenMuc.aspx?cm=Kh%C3%AD%20t%C6%B0%E1%BB%A3ng%20th%E1%BB%A7y%20v%C4%83n,"Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome-headless-shell=120.0.6099.129)
+Stacktrace:
+0   chromedriver                        0x0000000102acc4dc chromedriver + 4162780
+1   chromedriver                        0x0000000102ac4664 chromedriver + 4130404
+2   chromedriver                        0x000000010271bbc0 chromedriver + 293824
+3   chromedriver                        0x0000000102714324 chromedriver + 262948
+4   chromedriver                        0x0000000102705c7c chromedriver + 203900
+5   chromedriver                        0x0000000102704a98 chromedriver + 199320
+6   chromedriver                        0x0000000102703b24 chromedriver + 195364
+7   chromedriver                        0x0000000102703ad0 chromedriver + 195280
+8   chromedriver                        0x0000000102701e3c chromedriver + 187964
+9   chromedriver                        0x00000001027029fc chromedriver + 190972
+10  chromedriver                        0x000000010271e5d8 chromedriver + 304600
+11  chromedriver                        0x00000001027a20b8 chromedriver + 843960
+12  chromedriver                        0x00000001027a1ab0 chromedriver + 842416
+13  chromedriver                        0x00000001027556bc chromedriver + 530108
+14  chromedriver                        0x0000000102756930 chromedriver + 534832
+15  chromedriver                        0x0000000102a91e08 chromedriver + 3923464
+16  chromedriver                        0x0000000102a963dc chromedriver + 3941340
+17  chromedriver                        0x0000000102a7a038 chromedriver + 3825720
+18  chromedriver                        0x0000000102a96f3c chromedriver + 3944252
+19  chromedriver                        0x0000000102a6c6f4 chromedriver + 3770100
+20  chromedriver                        0x0000000102ab3980 chromedriver + 4061568
+21  chromedriver                        0x0000000102ab3af8 chromedriver + 4061944
+22  chromedriver                        0x0000000102ac42e4 chromedriver + 4129508
+23  libsystem_pthread.dylib             0x0000000193b6206c _pthread_start + 148
+24  libsystem_pthread.dylib             0x0000000193b5ce2c thread_start + 8
+"
+6,https://monre.gov.vn/Pages/ChuyenMuc.aspx?cm=%C4%90o%20%C4%91%E1%BA%A1c%20v%C3%A0%20b%E1%BA%A3n%20%C4%91%E1%BB%93,"Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome-headless-shell=120.0.6099.129)
+Stacktrace:
+0   chromedriver                        0x0000000102acc4dc chromedriver + 4162780
+1   chromedriver                        0x0000000102ac4664 chromedriver + 4130404
+2   chromedriver                        0x000000010271bbc0 chromedriver + 293824
+3   chromedriver                        0x0000000102714324 chromedriver + 262948
+4   chromedriver                        0x0000000102705c7c chromedriver + 203900
+5   chromedriver                        0x0000000102704a98 chromedriver + 199320
+6   chromedriver                        0x0000000102703b24 chromedriver + 195364
+7   chromedriver                        0x0000000102703ad0 chromedriver + 195280
+8   chromedriver                        0x0000000102701e3c chromedriver + 187964
+9   chromedriver                        0x00000001027029fc chromedriver + 190972
+10  chromedriver                        0x000000010271e5d8 chromedriver + 304600
+11  chromedriver                        0x00000001027a20b8 chromedriver + 843960
+12  chromedriver                        0x00000001027a1ab0 chromedriver + 842416
+13  chromedriver                        0x00000001027556bc chromedriver + 530108
+14  chromedriver                        0x0000000102756930 chromedriver + 534832
+15  chromedriver                        0x0000000102a91e08 chromedriver + 3923464
+16  chromedriver                        0x0000000102a963dc chromedriver + 3941340
+17  chromedriver                        0x0000000102a7a038 chromedriver + 3825720
+18  chromedriver                        0x0000000102a96f3c chromedriver + 3944252
+19  chromedriver                        0x0000000102a6c6f4 chromedriver + 3770100
+20  chromedriver                        0x0000000102ab3980 chromedriver + 4061568
+21  chromedriver                        0x0000000102ab3af8 chromedriver + 4061944
+22  chromedriver                        0x0000000102ac42e4 chromedriver + 4129508
+23  libsystem_pthread.dylib             0x0000000193b6206c _pthread_start + 148
+24  libsystem_pthread.dylib             0x0000000193b5ce2c thread_start + 8
+"
+7,https://monre.gov.vn/Pages/ChuyenMuc.aspx?cm=Bi%E1%BB%83n%20v%C3%A0%20h%E1%BA%A3i%20%C4%91%E1%BA%A3o,"Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome-headless-shell=120.0.6099.129)
+Stacktrace:
+0   chromedriver                        0x0000000102acc4dc chromedriver + 4162780
+1   chromedriver                        0x0000000102ac4664 chromedriver + 4130404
+2   chromedriver                        0x000000010271bbc0 chromedriver + 293824
+3   chromedriver                        0x0000000102714324 chromedriver + 262948
+4   chromedriver                        0x0000000102705c7c chromedriver + 203900
+5   chromedriver                        0x0000000102704a98 chromedriver + 199320
+6   chromedriver                        0x0000000102703b24 chromedriver + 195364
+7   chromedriver                        0x0000000102703ad0 chromedriver + 195280
+8   chromedriver                        0x0000000102701e3c chromedriver + 187964
+9   chromedriver                        0x00000001027029fc chromedriver + 190972
+10  chromedriver                        0x000000010271e5d8 chromedriver + 304600
+11  chromedriver                        0x00000001027a20b8 chromedriver + 843960
+12  chromedriver                        0x00000001027a1ab0 chromedriver + 842416
+13  chromedriver                        0x00000001027556bc chromedriver + 530108
+14  chromedriver                        0x0000000102756930 chromedriver + 534832
+15  chromedriver                        0x0000000102a91e08 chromedriver + 3923464
+16  chromedriver                        0x0000000102a963dc chromedriver + 3941340
+17  chromedriver                        0x0000000102a7a038 chromedriver + 3825720
+18  chromedriver                        0x0000000102a96f3c chromedriver + 3944252
+19  chromedriver                        0x0000000102a6c6f4 chromedriver + 3770100
+20  chromedriver                        0x0000000102ab3980 chromedriver + 4061568
+21  chromedriver                        0x0000000102ab3af8 chromedriver + 4061944
+22  chromedriver                        0x0000000102ac42e4 chromedriver + 4129508
+23  libsystem_pthread.dylib             0x0000000193b6206c _pthread_start + 148
+24  libsystem_pthread.dylib             0x0000000193b5ce2c thread_start + 8
+"
+8,https://monre.gov.vn/Pages/ChuyenMuc.aspx?cm=Bi%E1%BA%BFn%20%C4%91%E1%BB%95i%20kh%C3%AD%20h%E1%BA%ADu,"Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome-headless-shell=120.0.6099.129)
+Stacktrace:
+0   chromedriver                        0x0000000102acc4dc chromedriver + 4162780
+1   chromedriver                        0x0000000102ac4664 chromedriver + 4130404
+2   chromedriver                        0x000000010271bbc0 chromedriver + 293824
+3   chromedriver                        0x0000000102714324 chromedriver + 262948
+4   chromedriver                        0x0000000102705c7c chromedriver + 203900
+5   chromedriver                        0x0000000102704a98 chromedriver + 199320
+6   chromedriver                        0x0000000102703b24 chromedriver + 195364
+7   chromedriver                        0x0000000102703ad0 chromedriver + 195280
+8   chromedriver                        0x0000000102701e3c chromedriver + 187964
+9   chromedriver                        0x00000001027029fc chromedriver + 190972
+10  chromedriver                        0x000000010271e5d8 chromedriver + 304600
+11  chromedriver                        0x00000001027a20b8 chromedriver + 843960
+12  chromedriver                        0x00000001027a1ab0 chromedriver + 842416
+13  chromedriver                        0x00000001027556bc chromedriver + 530108
+14  chromedriver                        0x0000000102756930 chromedriver + 534832
+15  chromedriver                        0x0000000102a91e08 chromedriver + 3923464
+16  chromedriver                        0x0000000102a963dc chromedriver + 3941340
+17  chromedriver                        0x0000000102a7a038 chromedriver + 3825720
+18  chromedriver                        0x0000000102a96f3c chromedriver + 3944252
+19  chromedriver                        0x0000000102a6c6f4 chromedriver + 3770100
+20  chromedriver                        0x0000000102ab3980 chromedriver + 4061568
+21  chromedriver                        0x0000000102ab3af8 chromedriver + 4061944
+22  chromedriver                        0x0000000102ac42e4 chromedriver + 4129508
+23  libsystem_pthread.dylib             0x0000000193b6206c _pthread_start + 148
+24  libsystem_pthread.dylib             0x0000000193b5ce2c thread_start + 8
+"
+9,https://monre.gov.vn/Pages/ChuyenMuc.aspx?cm=Vi%E1%BB%85n%20th%C3%A1m,"Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: chrome-headless-shell=120.0.6099.129)
+Stacktrace:
+0   chromedriver                        0x0000000102acc4dc chromedriver + 4162780
+1   chromedriver                        0x0000000102ac4664 chromedriver + 4130404
+2   chromedriver                        0x000000010271bbc0 chromedriver + 293824
+3   chromedriver                        0x0000000102714324 chromedriver + 262948
+4   chromedriver                        0x0000000102705c7c chromedriver + 203900
+5   chromedriver                        0x0000000102704a98 chromedriver + 199320
+6   chromedriver                        0x0000000102703b24 chromedriver + 195364
+7   chromedriver                        0x0000000102703ad0 chromedriver + 195280
+8   chromedriver                        0x0000000102701e3c chromedriver + 187964
+9   chromedriver                        0x00000001027029fc chromedriver + 190972
+10  chromedriver                        0x000000010271e5d8 chromedriver + 304600
+11  chromedriver                        0x00000001027a20b8 chromedriver + 843960
+12  chromedriver                        0x00000001027a1ab0 chromedriver + 842416
+13  chromedriver                        0x00000001027556bc chromedriver + 530108
+14  chromedriver                        0x0000000102756930 chromedriver + 534832
+15  chromedriver                        0x0000000102a91e08 chromedriver + 3923464
+16  chromedriver                        0x0000000102a963dc chromedriver + 3941340
+17  chromedriver                        0x0000000102a7a038 chromedriver + 3825720
+18  chromedriver                        0x0000000102a96f3c chromedriver + 3944252
+19  chromedriver                        0x0000000102a6c6f4 chromedriver + 3770100
+20  chromedriver                        0x0000000102ab3980 chromedriver + 4061568
+21  chromedriver                        0x0000000102ab3af8 chromedriver + 4061944
+22  chromedriver                        0x0000000102ac42e4 chromedriver + 4129508
+23  libsystem_pthread.dylib             0x0000000193b6206c _pthread_start + 148
+24  libsystem_pthread.dylib             0x0000000193b5ce2c thread_start + 8
+"
+10,http://www.mofa.gov.vn/,"Message: timeout: Timed out receiving message from renderer: 127.085
+  (Session info: chrome-headless-shell=120.0.6099.129)
+Stacktrace:
+0   chromedriver                        0x00000001005804dc chromedriver + 4162780
+1   chromedriver                        0x0000000100578664 chromedriver + 4130404
+2   chromedriver                        0x00000001001cfbc0 chromedriver + 293824
+3   chromedriver                        0x00000001001b7c3c chromedriver + 195644
+4   chromedriver                        0x00000001001b7ad0 chromedriver + 195280
+5   chromedriver                        0x00000001001b5e3c chromedriver + 187964
+6   chromedriver                        0x00000001001b6b30 chromedriver + 191280
+7   chromedriver                        0x00000001001c5f5c chromedriver + 253788
+8   chromedriver                        0x00000001001db4b4 chromedriver + 341172
+9   chromedriver                        0x00000001001b71e0 chromedriver + 192992
+10  chromedriver                        0x00000001001db2d0 chromedriver + 340688
+11  chromedriver                        0x0000000100255bd8 chromedriver + 842712
+12  chromedriver                        0x00000001002096bc chromedriver + 530108
+13  chromedriver                        0x000000010020a930 chromedriver + 534832
+14  chromedriver                        0x0000000100545e08 chromedriver + 3923464
+15  chromedriver                        0x000000010054a3dc chromedriver + 3941340
+16  chromedriver                        0x000000010052e038 chromedriver + 3825720
+17  chromedriver                        0x000000010054af3c chromedriver + 3944252
+18  chromedriver                        0x00000001005206f4 chromedriver + 3770100
+19  chromedriver                        0x0000000100567980 chromedriver + 4061568
+20  chromedriver                        0x0000000100567af8 chromedriver + 4061944
+21  chromedriver                        0x00000001005782e4 chromedriver + 4129508
+22  libsystem_pthread.dylib             0x0000000193b6206c _pthread_start + 148
+23  libsystem_pthread.dylib             0x0000000193b5ce2c thread_start + 8
+"
