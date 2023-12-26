@@ -31,7 +31,8 @@ import pandas as pd
 import plotly.express as px
 
 # 엑셀 파일 경로
-csv_file_path = '/Users/dydit/Desktop/sampled_Indonesia_trade_offices.csv'
+# csv_file_path = '/Users/dydit/Desktop/sampled_Indonesia_trade_offices.csv'
+csv_file_path = 'https://raw.githubusercontent.com/dydits/bizbuzz_streamlit/main/maps%20csv%20files/sampled_Indonesia_trade_offices.csv'
 
 # 엑셀 파일 읽어오기
 df = pd.read_csv(csv_file_path)

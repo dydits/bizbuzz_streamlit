@@ -83,11 +83,12 @@ with col2:
 ##################################################### Above, extra work ###################################################
 import subprocess
 # 세 파일을 순차적으로 실행하는 함수
+
 def run_python_files():
     file_paths = [
-        '/Users/dydit/Desktop/US_All_Govern.py',
-        '/Users/dydit/Desktop/US_All_DefenseIndustry.py',
-        '/Users/dydit/Desktop/US_All_Local.py',
+        'https://raw.githubusercontent.com/dydits/bizbuzz_streamlit/main/codes/US_All_Govern.py',
+        'https://raw.githubusercontent.com/dydits/bizbuzz_streamlit/main/codes/US_All_DefenseIndustry.py',
+        'https://raw.githubusercontent.com/dydits/bizbuzz_streamlit/main/codes/US_All_Local.py',
         '/Users/dydit/Desktop/US_Select.py'
     ]
 
