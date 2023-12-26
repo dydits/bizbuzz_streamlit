@@ -34,10 +34,10 @@ import pandas as pd
 import plotly.express as px
 
 # 엑셀 파일 경로
-excel_file_path = '/Users/dydit/Desktop/us_address_all.xlsx'
+excel_file_path = '/Users/dydit/Desktop/us_address_all.csv'
 
 # 엑셀 파일 읽어오기
-df = pd.read_excel(excel_file_path, header=None)
+df = pd.read_csv(excel_file_path, header=None)
 
 # 컬럼 두 개 생성
 col1, col2 = st.columns(2)
