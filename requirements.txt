@@ -1,0 +1,12 @@
+streamlit 
+pandas
+plotly
+plotly-express
+selenium
+python-dateutil
+newspaper3k
+requests
+beautifulsoup4
+python_decouple
+
+## Chrome Driver는 따로 설치
