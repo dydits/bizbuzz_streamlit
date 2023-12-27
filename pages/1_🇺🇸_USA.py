@@ -86,10 +86,10 @@ import subprocess
 
 def run_python_files():
     file_paths = [
-        'https://raw.githubusercontent.com/dydits/bizbuzz_streamlit/main/codes/US_All_Govern.py',
-        'https://raw.githubusercontent.com/dydits/bizbuzz_streamlit/main/codes/US_All_DefenseIndustry.py',
-        'https://raw.githubusercontent.com/dydits/bizbuzz_streamlit/main/codes/US_All_Local.py',
-        '/Users/dydit/Desktop/US_Select.py'
+        '/Users/dydit/bizbuzz_streamlit/codes/US_All_Govern.py',
+        '/Users/dydit/bizbuzz_streamlit/codes/US_All_DefenseIndustry.py',
+        '/Users/dydit/bizbuzz_streamlit/codes/US_All_Local.py',
+        '/Users/dydit/bizbuzz_streamlit/codes/US_Select.py'
     ]
 
     for file_path in file_paths:

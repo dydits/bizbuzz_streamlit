@@ -1,0 +1,129 @@
+,Unnamed: 0.1,Unnamed: 0,Error Link,Error
+0,0.0,0.0,https://www.doi.gov/news,Date Blocks
+1,1.0,1.0,https://news.caloes.ca.gov/,'NoneType' object is not subscriptable
+2,2.0,2.0,https://www.twc.texas.gov/news,Entire Error
+3,3.0,3.0,https://www.commerce.nc.gov/news/press-releases,'NoneType' object has no attribute 'find_all'
+4,4.0,4.0,https://www.ncdor.gov/news/press-releases,None News
+5,,,https://www.mercurynews.com/latest-headlines/,None Date/None Date
+6,,,https://www.mercurynews.com/latest-headlines/,None Date/None Date
+7,,,https://www.mercurynews.com/latest-headlines/,None Date/None Date
+8,,,https://www.mercurynews.com/latest-headlines/,None Date/None Date
+9,,,https://www.mercurynews.com/latest-headlines/,None Date/None Date
+10,,,https://www.mercurynews.com/latest-headlines/,None Date/None Date
+11,,,https://www.mercurynews.com/latest-headlines/,None Date/None Date
+12,,,https://www.mercurynews.com/latest-headlines/,None Date/None Date
+13,,,https://www.mercurynews.com/latest-headlines/,None Date/None Date
+14,,,https://www.dallasnews.com/news/,name 'ElementClickInterceptedException' is not defined
+15,,,https://nypost.com/news/,"Message: element click intercepted: Element <button type=""button"" class=""button button--solid see-more"" data-more-url=""https://nypost.com/news/page/4/"" data-ga-event=""
+		{&quot;category&quot;:&quot;Read More Stories&quot;,&quot;action&quot;:&quot;https:\/\/nypost.com\/news\/page\/4\/&quot;}		"" data-ga4-event=""
+					{&quot;event_name&quot;:&quot;ux_engagement&quot;,&quot;source_unit&quot;:&quot;Read More Stories&quot;}					"">...</button> is not clickable at point (392, 577). Other element would receive the click: <iframe id=""zephr-component-1"" frameborder=""0"" scrolling=""no"" data-zephr-component=""component"" style=""overflow: hidden; background-color: transparent; border: none;""></iframe>
+  (Session info: chrome-headless-shell=120.0.6099.129)
+Stacktrace:
+0   chromedriver                        0x000000010310c4dc chromedriver + 4162780
+1   chromedriver                        0x0000000103104664 chromedriver + 4130404
+2   chromedriver                        0x0000000102d5bbc0 chromedriver + 293824
+3   chromedriver                        0x0000000102da90b4 chromedriver + 610484
+4   chromedriver                        0x0000000102da7090 chromedriver + 602256
+5   chromedriver                        0x0000000102da4b58 chromedriver + 592728
+6   chromedriver                        0x0000000102da3b24 chromedriver + 588580
+7   chromedriver                        0x0000000102d97994 chromedriver + 539028
+8   chromedriver                        0x0000000102d97250 chromedriver + 537168
+9   chromedriver                        0x0000000102de1ab0 chromedriver + 842416
+10  chromedriver                        0x0000000102d956bc chromedriver + 530108
+11  chromedriver                        0x0000000102d96930 chromedriver + 534832
+12  chromedriver                        0x00000001030d1e08 chromedriver + 3923464
+13  chromedriver                        0x00000001030d63dc chromedriver + 3941340
+14  chromedriver                        0x00000001030ba038 chromedriver + 3825720
+15  chromedriver                        0x00000001030d6f3c chromedriver + 3944252
+16  chromedriver                        0x00000001030ac6f4 chromedriver + 3770100
+17  chromedriver                        0x00000001030f3980 chromedriver + 4061568
+18  chromedriver                        0x00000001030f3af8 chromedriver + 4061944
+19  chromedriver                        0x00000001031042e4 chromedriver + 4129508
+20  libsystem_pthread.dylib             0x0000000193b6206c _pthread_start + 148
+21  libsystem_pthread.dylib             0x0000000193b5ce2c thread_start + 8
+"
+16,,,https://nypost.com/2023/12/25/news/pro-palestinian-protests-near-homes-of-lloyd-austin-jake-sullivan/,None Title
+17,,,https://nypost.com/2023/12/25/news/woman-with-disgusting-attitude-divides-the-internet-with-her-airplane-actions/,None Title
+18,,,https://nypost.com/2023/12/25/news/chris-christies-time-temper-grows-short-in-new-hampshire/,None Title
+19,,,https://nypost.com/2023/12/25/news/israeli-mom-who-stalled-hamas-captors-with-cookies-shares-recipe/,None Title
+20,,,https://nypost.com/2023/12/25/news/law-enforcement-facing-unprecedented-rise-in-threats-deputy-ag-says/,None Title
+21,,,https://nypost.com/2023/12/25/news/marjorie-taylor-greene-gets-unwelcome-christmas-day-surprise/,None Title/None Title
+22,,,https://nypost.com/2023/12/25/news/fresh-wave-of-7000-migrants-set-to-crash-into-us-border-ahead-of-blinkens-mexico-visit/,None Title/None Title
+23,,,https://nypost.com/2023/12/25/news/trump-vows-big-and-glorious-2024-win-in-christmas-message/,None Title/None Title
+24,,,https://nypost.com/2023/12/25/news/royal-caribbean-cruise-ship-passenger-missing-after-going-overboard-on-trip-to-the-bahamas/,None Title/None Title
+25,,,https://nypost.com/2023/12/25/news/what-happens-to-the-billions-in-gift-cards-that-are-never-spent/,None Title/None Title
+26,,,https://nypost.com/2023/12/25/news/in-arizona-robert-f-kennedy-jr-draws-biden-and-trump-voters-united-by-distrust/,None Title/None Title
+27,,,https://nypost.com/2023/12/25/news/wild-turkey-cuts-power-to-thousands-of-homes-in-sacramento/,None Title/None Title
+28,,,https://nypost.com/2023/12/25/news/biden-scolds-media-on-economy-start-reporting-it-the-right-way/,None Title/None Title
+29,,,https://nypost.com/2023/12/25/news/a-plane-stuck-for-days-in-france-for-a-human-trafficking-investigation-leaves-for-india/,None Title/None Title
+30,,,https://nypost.com/2023/12/25/news/ukraine-says-it-shot-down-russian-fighter-jets-and-drones-as-the-country-officially-marks-christmas/,None Title/None Title
+31,,,https://nypost.com/2023/12/25/news/top-places-where-weather-will-cause-flight-problems-for-christmas-holiday-travelers/,None Title/None Title
+32,,,https://nypost.com/2023/12/25/news/biden-challenger-dean-phillips-on-reparations-the-border-and-israel/,None Title/None Title
+33,,,https://nypost.com/2023/12/25/news/teacher-who-was-found-dead-in-burned-car-idd/,None Title/None Title
+34,,,https://nypost.com/2023/12/25/news/aoc-slammed-over-christmas-message-about-israel-hamas-war-jew-hate/,None Title/None Title
+35,,,https://nypost.com/2023/12/25/news/florida-state-trooper-mistakes-police-captain-for-fleeing-suspect/,None Title/None Title
+36,,,https://nypost.com/2023/12/25/news/pro-palestinian-protests-near-homes-of-lloyd-austin-jake-sullivan/,None Title/None Title/None Title
+37,,,https://nypost.com/2023/12/25/news/woman-with-disgusting-attitude-divides-the-internet-with-her-airplane-actions/,None Title/None Title/None Title
+38,,,https://nypost.com/2023/12/25/news/chris-christies-time-temper-grows-short-in-new-hampshire/,None Title/None Title/None Title
+39,,,https://nypost.com/2023/12/25/news/israeli-mom-who-stalled-hamas-captors-with-cookies-shares-recipe/,None Title/None Title/None Title
+40,,,https://nypost.com/2023/12/25/news/law-enforcement-facing-unprecedented-rise-in-threats-deputy-ag-says/,None Title/None Title/None Title
+41,,,https://nypost.com/2023/12/25/news/marjorie-taylor-greene-gets-unwelcome-christmas-day-surprise/,None Title/None Title/None Title/None Title
+42,,,https://nypost.com/2023/12/25/news/fresh-wave-of-7000-migrants-set-to-crash-into-us-border-ahead-of-blinkens-mexico-visit/,None Title/None Title/None Title/None Title
+43,,,https://nypost.com/2023/12/25/news/trump-vows-big-and-glorious-2024-win-in-christmas-message/,None Title/None Title/None Title/None Title
+44,,,https://nypost.com/2023/12/25/news/royal-caribbean-cruise-ship-passenger-missing-after-going-overboard-on-trip-to-the-bahamas/,None Title/None Title/None Title/None Title
+45,,,https://nypost.com/2023/12/25/news/what-happens-to-the-billions-in-gift-cards-that-are-never-spent/,None Title/None Title/None Title/None Title
+46,,,https://nypost.com/2023/12/25/news/in-arizona-robert-f-kennedy-jr-draws-biden-and-trump-voters-united-by-distrust/,None Title/None Title/None Title/None Title
+47,,,https://nypost.com/2023/12/25/news/wild-turkey-cuts-power-to-thousands-of-homes-in-sacramento/,None Title/None Title/None Title/None Title
+48,,,https://nypost.com/2023/12/25/news/biden-scolds-media-on-economy-start-reporting-it-the-right-way/,None Title/None Title/None Title/None Title
+49,,,https://nypost.com/2023/12/25/news/a-plane-stuck-for-days-in-france-for-a-human-trafficking-investigation-leaves-for-india/,None Title/None Title/None Title/None Title
+50,,,https://nypost.com/2023/12/25/news/ukraine-says-it-shot-down-russian-fighter-jets-and-drones-as-the-country-officially-marks-christmas/,None Title/None Title/None Title/None Title
+51,,,https://nypost.com/2023/12/25/news/top-places-where-weather-will-cause-flight-problems-for-christmas-holiday-travelers/,None Title/None Title/None Title/None Title
+52,,,https://nypost.com/2023/12/25/news/biden-challenger-dean-phillips-on-reparations-the-border-and-israel/,None Title/None Title/None Title/None Title
+53,,,https://nypost.com/2023/12/25/news/teacher-who-was-found-dead-in-burned-car-idd/,None Title/None Title/None Title/None Title
+54,,,https://nypost.com/2023/12/25/news/aoc-slammed-over-christmas-message-about-israel-hamas-war-jew-hate/,None Title/None Title/None Title/None Title
+55,,,https://nypost.com/2023/12/25/news/same-sex-nativity-scene-at-church-ripped-as-blasphemous/,None Title/None Title/None Title/None Title
+56,,,https://nypost.com/2023/12/25/news/russia-moves-navalny-to-arctic-penal-colony-spokeswoman-says/,None Title/None Title/None Title/None Title
+57,,,https://nypost.com/2023/12/25/news/new-video-shows-panicked-passengers-on-stranded-norwegian-cruise-ship/,None Title/None Title/None Title/None Title
+58,,,https://nypost.com/2023/12/25/news/hawaii-influencer-theresa-cachuela-killed-in-front-of-daughter-in-murder-suicide/,None Title/None Title/None Title/None Title
+59,,,https://nypost.com/2023/12/25/news/pope-francis-blasts-the-weapons-industry-as-he-makes-a-christmas-appeal-for-peace-in-the-world/,None Title/None Title/None Title/None Title
+60,,,https://nypost.com/2023/12/25/news/harvards-board-facing-pressure-to-resign-apologize/,None Title/None Title/None Title/None Title
+61,,,https://nypost.com/2023/12/25/news/oregon-man-smashes-museum-window-escapes-with-numerous-gold-items/,None Title/None Title/None Title/None Title
+62,,,https://nypost.com/2023/12/25/news/christmas-lawyer-jeremy-morris-faces-being-disbarred-over-holiday-decoration-battle-with-idaho-hoa/,None Title/None Title/None Title/None Title
+63,,,https://nypost.com/2023/12/25/news/oregon-middle-school-evacuated-after-dog-waste-bag-dispenser-mistaken-for-hand-grenade/,None Title/None Title/None Title/None Title
+64,,,https://nypost.com/2023/12/25/news/orlando-international-airport-encourages-flyers-to-air-grievances-on-festivus-the-fictional-seinfeld-holiday/,None Title/None Title/None Title/None Title
+65,,,https://nypost.com/2023/12/25/news/british-home-secretary-james-cleverly-under-fire-for-making-joke-about-date-rape-drug/,None Title/None Title/None Title/None Title
+66,,,https://nypost.com/2023/12/25/news/colorado-citadel-mall-shooting-leaves-one-man-dead-three-injured/,None Title/None Title/None Title/None Title
+67,,,https://nypost.com/2023/12/24/news/serbia-police-fire-tear-gas-at-election-protesters-threatening-to-storm-capitals-city-hall/,None Title/None Title/None Title/None Title
+68,,,https://nypost.com/2023/12/24/news/chicago-airports-face-cancelations-due-to-dense-fog-amid-christmas-weather-chaos/,None Title/None Title/None Title/None Title
+69,,,https://nypost.com/2023/12/24/news/scientists-exploring-if-deploying-nuke-could-stop-catastrophic-asteroid/,None Title/None Title/None Title/None Title
+70,,,https://nypost.com/2023/12/24/news/overwhelmed-florida-woman-arrested-after-309-animals-seized-from-her-mobile-home-with-lethal-levels-of-ammonia-inside/,None Title/None Title/None Title/None Title
+71,,,https://nypost.com/2023/12/24/news/man-arrested-after-allegedly-pointing-laser-at-commercial-plane-then-at-police-helicopter-as-they-tried-to-stop-him-cops/,None Title/None Title/None Title/None Title
+72,,,https://nypost.com/2023/12/24/news/mysterious-row-of-metal-seats-wash-up-on-jersey-shore-beach/,None Title/None Title/None Title/None Title
+73,,,https://nypost.com/2023/12/24/news/footage-reveals-intricate-two-level-hamas-hqs-where-5-hostages-bodies-were-found/,None Title/None Title/None Title/None Title
+74,,,https://nypost.com/2023/12/24/news/husband-dies-days-after-wife-unborn-baby-killed-in-pre-christmas-car-wreck-reports/,None Title/None Title/None Title/None Title
+75,,,https://www.washingtonpost.com/latest-headlines/,None Title
+76,,,https://www.washingtonpost.com/latest-headlines/,None Title
+77,,,https://www.washingtonpost.com/latest-headlines/,None Title
+78,,,https://www.washingtonpost.com/latest-headlines/,None Title
+79,,,https://www.washingtonpost.com/latest-headlines/,None Title
+80,,,https://www.washingtonpost.com/latest-headlines/,None Title
+81,,,https://www.washingtonpost.com/latest-headlines/,None Title
+82,,,https://www.washingtonpost.com/latest-headlines/,None Title
+83,,,https://www.washingtonpost.com/latest-headlines/,None Title
+84,,,https://www.washingtonpost.com/latest-headlines/,None Title
+85,,,https://www.washingtonpost.com/latest-headlines/,None Title
+86,,,https://www.washingtonpost.com/latest-headlines/,None Title
+87,,,https://www.washingtonpost.com/latest-headlines/,None Title
+88,,,https://www.washingtonpost.com/latest-headlines/,None Title
+89,,,https://www.washingtonpost.com/latest-headlines/,None Title
+90,,,https://www.washingtonpost.com/latest-headlines/,None Title
+91,,,https://www.washingtonpost.com/latest-headlines/,None Title
+92,,,https://www.washingtonpost.com/latest-headlines/,None Title
+93,,,https://www.washingtonpost.com/latest-headlines/,None Title
+94,,,https://www.washingtonpost.com/latest-headlines/,None Title
+95,,,https://www.washingtonpost.com/latest-headlines/,None Title/None Title
+96,,,https://www.washingtonpost.com/latest-headlines/,None Title/None Title
+97,,,https://www.washingtonpost.com/latest-headlines/,None Title/None Title
+98,,,https://www.fox5dc.com/news/heres-the-minimum-annual-income-required-to-be-middle-class-in-dc-maryland-and-virginia,"Article `download()` failed with HTTPSConnectionPool(host='www.fox5dc.com', port=443): Read timed out. (read timeout=7) on URL https://www.fox5dc.com/news/heres-the-minimum-annual-income-required-to-be-middle-class-in-dc-maryland-and-virginia"
+99,,,https://www.fox5dc.com/tag/us/md,'NoneType' object has no attribute 'find'
+100,,,https://foxbaltimore.com/news/local,invalid literal for int() with base 10: ''
